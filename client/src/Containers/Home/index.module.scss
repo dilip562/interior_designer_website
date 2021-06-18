@@ -1,3 +1,47 @@
-h1{
-  color: red;
+@import '../../App.scss';
+
+.homeContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .boxContainer {
+    display: flex;
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 280px;
+      padding: 20px;
+      cursor: pointer;
+      border-radius: 7px;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      .title {
+        font-weight: 500;
+        font-size: 2rem;
+        color: $primary-text;
+      }
+      .content {
+        font-size: 14px;
+        color: #686868;
+        font-weight: 400;
+        margin: 10px 0;
+      }
+      .link {
+        font-weight: 500;
+        color: #646464;
+        img {
+          height: 10px;
+        }
+      }
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
 }
